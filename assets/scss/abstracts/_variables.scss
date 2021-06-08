@@ -1,0 +1,36 @@
+/* MAIN COLOR */
+
+//Primary color
+$main-color: #a9c200;
+//Secondary color
+
+/* TYPE */
+//base color
+$base-color: #777a7c;
+//Headline Color
+$headline-color: #262c31;
+/* LINK */
+/* Link color */
+$link-color: #262c31;
+/* Link color hover */
+$link-hover: #a9c200;
+
+/* Time transition */
+$t: 0.5s;
+
+$font-family: 'Work Sans', sans-serif;
+
+/* FONT SIZE TEXT */
+//font-size
+$font-base-pc: 16px;
+$font-base-mb: 16px;
+/*GIRD  - MEDIA queries breakpoint*/
+$xxs-min: 420px;
+$xs-min: 768px;
+$sm-min: 992px;
+$md-min: 1200px;
+
+$xxs-max: ($xxs-min -1);
+$xs-max: ($xs-min - 1);
+$sm-max: ($sm-min -1);
+$md-max: ($md-min -1);
