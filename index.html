@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,16 +13,58 @@
     <!-- link custom css -->
     <link rel="stylesheet" href="assets/scss/style.css">
 </head>
+
 <body>
     <div class="uni-wrapper">
-    <!--  header -->
-    <header id="uni-header">
-        <div class="row">
+        <!--  header -->
+        <header id="uni-header" class="uni-header">
+            <div class="row relative">
+                <div class="col-6 col-xl-2">
+                    <div class="uni-header__logo">
+                        <img class="uni-header__img" src="assets/images/logo.png" alt="logo">
+                    </div>
+                </div>
+                <div class="col-6 col-xl-10">
+                    <div class="uni-header__wrapper"></div>
+                    <nav class="uni-header__menu">
+                        <a class="uni-header__toggle" href="#">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                        <ul class="uni-header__list">
+                            <li class="uni-header__item uni-header__item-children active">
+                                <a href="#">Home</a>
+                                <ul class="uni-header__sub-dropdown">
+                                    <li class="uni-header__item "><a href="#">Home 2</a></li>
+                                    <li class="uni-header__item"><a href="#">Home 2</a></li>
+                                    <li class="uni-header__item"><a href="#">Home 2</a></li>
+                                    <li class="uni-header__item"><a href="#">Home 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="uni-header__item">
+                                <a href="#">Pages</a>
+                            </li>
+                            <li class="uni-header__item">
+                                <a href="#">Features</a>
+                            </li>
+                            <li class="uni-header__item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="uni-header__item">
+                                <a href="#">Shop</a>
+                            </li>
+                            <li class="uni-header__item">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="uni-header__item menu-btn">
+                                <a href="#">Request a Quote</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!-- end-header -->
 
-        </div>
-    </header>
-    <!-- end-header -->
-    
 
     </div>
 
@@ -40,4 +83,5 @@
     <!-- Link main css -->
     <script src="assets/js/main.js"></script>
 </body>
+
 </html>

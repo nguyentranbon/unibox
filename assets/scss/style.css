@@ -7,6 +7,8 @@
 /* FONT SIZE TEXT */
 /*GIRD  - MEDIA queries breakpoint*/
 @import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -143,7 +145,8 @@ a {
 a:hover {
   -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
-  color: #a9c200;
+  color: #a9c200 !important;
+  text-decoration: none;
 }
 
 h1:first-child,
@@ -168,56 +171,92 @@ p {
   margin-bottom: 1em;
 }
 
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
+#uni-header {
+  padding: 0px 3% 0px 3%;
 }
 
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+.uni-header {
+  background: #262c31;
+}
+
+.uni-header__menu {
+  float: right;
+  position: relative;
+  padding-right: 40px;
+}
+
+.uni-header__list {
+  position: relative;
+}
+
+.uni-header__list > li {
+  position: relative;
+  display: inline-block;
+}
+
+.uni-header__list > li > a {
+  display: inline-block;
+  font-size: 16px;
+  line-height: 16px;
+  padding: 52px 20px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.uni-header__list li a:hover {
+  color: #a9c200;
+}
+
+.uni-header__list li.active > a {
+  color: #a9c200;
+}
+
+.uni-header__list li:first-child a {
+  padding-left: 0;
+}
+
+.uni-header__sub-dropdown {
+  width: 240px;
+  background: lightblue;
+  position: absolute;
+  left: 0%;
+  top: 100%;
+}
+
+.uni-header__sub-dropdown > li > a {
+  color: #fff;
+}
+
+.uni-header__toggle {
+  position: absolute;
+  right: 0;
+  color: #fff;
+  font-size: 24px;
+  height: auto;
   display: block;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
-body {
-  line-height: 1;
+.uni-header__logo {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  height: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-ol, ul {
-  list-style: none;
+.uni-header__img {
+  height: 60px;
 }
 
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.uni-header__item-children > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f107";
+  float: right;
+  margin-left: 7px;
 }

@@ -67,7 +67,8 @@ a{
 }
 a:hover{
     transition: $t ease-in-out;
-    color: $link-hover;
+    color: $link-hover !important;
+	text-decoration: none;
 }
 
 h1:first-child,
