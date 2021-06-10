@@ -1,0 +1,21 @@
+.menu-btn{
+    display: inline-block;
+    > a{
+        border: 1px solid #f4f4f4;
+        font-size: 18px;
+        font-weight: 400;
+        padding: 20px 40px !important;
+        border-radius: 4px;
+        text-transform: capitalize;
+    }
+}
+.menu-btn > a:hover{
+    background: $main-color;
+    border-color: $main-color;
+    color: #fff !important;
+}
+@media (max-width: $md-max){
+    .menu-btn > a{
+        display: none !important;
+    }
+}

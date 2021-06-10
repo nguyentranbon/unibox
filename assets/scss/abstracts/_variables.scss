@@ -16,7 +16,7 @@ $link-color: #262c31;
 $link-hover: #a9c200;
 
 /* Time transition */
-$t: 0.5s;
+$t: 0.3s;
 
 $font-family: 'Work Sans', sans-serif;
 
@@ -30,7 +30,7 @@ $xs-min: 768px;
 $sm-min: 992px;
 $md-min: 1200px;
 
-$xxs-max: ($xxs-min -1);
+$xxs-max: ($xxs-min - 1);
 $xs-max: ($xs-min - 1);
-$sm-max: ($sm-min -1);
-$md-max: ($md-min -1);
+$sm-max: ($sm-min - 1);
+$md-max: ($md-min - 1);

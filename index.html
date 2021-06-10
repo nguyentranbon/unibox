@@ -19,32 +19,100 @@
         <!--  header -->
         <header id="uni-header" class="uni-header">
             <div class="row relative">
-                <div class="col-6 col-xl-2">
+                <div class="col-6 col-xl-2 col-lg-3">
                     <div class="uni-header__logo">
                         <img class="uni-header__img" src="assets/images/logo.png" alt="logo">
                     </div>
                 </div>
-                <div class="col-6 col-xl-10">
-                    <div class="uni-header__wrapper"></div>
+                <div class="col-6 col-xl-10 col-lg-8">
                     <nav class="uni-header__menu">
                         <a class="uni-header__toggle" href="#">
                             <i class="fa fa-bars" aria-hidden="true"></i>
                         </a>
-                        <ul class="uni-header__list">
+                        <ul class="uni-header__list d-none d-lg-block">
                             <li class="uni-header__item uni-header__item-children active">
                                 <a href="#">Home</a>
-                                <ul class="uni-header__sub-dropdown">
+                                <ul class="uni-header__dropdown">
                                     <li class="uni-header__item "><a href="#">Home 2</a></li>
                                     <li class="uni-header__item"><a href="#">Home 2</a></li>
                                     <li class="uni-header__item"><a href="#">Home 2</a></li>
                                     <li class="uni-header__item"><a href="#">Home 2</a></li>
                                 </ul>
                             </li>
-                            <li class="uni-header__item">
+                            <li class="uni-header__item uni-header__item-children">
                                 <a href="#">Pages</a>
+                                <ul class="uni-header__dropdown">
+                                    <li class="uni-header__item uni-header__item__has-child ">
+                                        <a href="#">Pages 2</a>
+                                        <ul class="uni-header__dropdown uni-header__sub-dropdown">
+                                            <li class="uni-header__item "><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="uni-header__item"><a href="#">Pages 2</a></li>
+                                    <li class="uni-header__item uni-header__item__has-child " >
+                                        <a href="#">Pages 2</a>
+                                        <ul class="uni-header__dropdown uni-header__sub-dropdown">
+                                            <li class="uni-header__item "><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                            <li class="uni-header__item"><a href="#">Pages 3</a></li>
+                                        </ul>
+                                    </li>
+                                    <li class="uni-header__item"><a href="#">Pages 2</a></li>
+                                </ul>
                             </li>
-                            <li class="uni-header__item">
+                            <li class="uni-header__item uni-header__item-children">
                                 <a href="#">Features</a>
+                                <ul class="uni-header__dropdown uni-header__mega-dropdown">
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <ul class="uni-header__mega-group">
+                                                <li class="uni-header__item">
+                                                    <a href="#">Features 2</a>
+                                                    <ul class="uni-header__mega-dropdown__child">
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <ul class="uni-header__mega-group">
+                                                <li class="uni-header__item">
+                                                    <a href="#">Features 2</a>
+                                                    <ul class="uni-header__mega-dropdown__child">
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-sm-4">
+                                            <ul class="uni-header__mega-group">
+                                                <li class="uni-header__item">
+                                                    <a href="#">Features 2</a>
+                                                    <ul class="uni-header__mega-dropdown__child">
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                        <li class="uni-header__item"><a href="#">Features 3</a></li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </ul>
                             </li>
                             <li class="uni-header__item">
                                 <a href="#">Blog</a>
@@ -70,8 +138,20 @@
 
 
 
+    <!--Off canvas overlay-->
+    <div class="offcanvas-overlay"></div>
+    <div class="offcanvas-menu">
+        <a href="#" class="offcanvas-close"><span class="fa fa-remove"></span></a>
+        <div class="offcanvas-inner">
+            <div class="pc-module">
+                <div class="pc-module__content">
+                    
+                </div>
+            </div>
+        </div>
+    </div>
 
-
+    <!-- End canvas overlay -->
 
 
     <!-- Link script jquery -->
