@@ -24,7 +24,7 @@
                         <img class="uni-header__img" src="assets/images/logo.png" alt="logo">
                     </div>
                 </div>
-                <div class="col-6 col-xl-10 col-lg-8">
+                <div class="col-6 col-xl-10 col-lg-9">
                     <!-- nav -->
                     <nav class="uni-header__menu">
                         <a class="uni-header__toggle" href="#">
@@ -136,18 +136,7 @@
         <!-- end-header -->
         <!-- Main content -->
         <main>
-            <div id="ramdom-number"></div>
-            <script>
-               const random =  document.getElementById("ramdom-number");
-               var headIndex = 2; // Khới tạo giá trị bắt đầu
-                function change() {
-                    random.innerHTML = "Head " + headIndex;
-                    headIndex = Math.floor(Math.random() * 100); // *100 là giới hạn random
-                }
 
-                setInterval(change, 3000); // 3000 là thời gian tương đương 3s
-       
-            </script>
         </main>
         <!-- End main content -->
         <!--Off canvas overlay-->
@@ -155,7 +144,7 @@
         <div class="offcanvas-menu">
             <a href="#" class="offcanvas-close"><i class="fas fa-times"></i></a>
             <div class="offcanvas-inner">
-                <div class="pc-module">
+                <div class="pc-module d-none d-lg-block">
                     <div class="pc-module__content">
                         <div class="pc-module__logo">
                             <a href="" class="pc-module__link">
@@ -217,16 +206,54 @@
                             <!-- social -->
                             <div class="pc-module__social">
                                 <ul class="social__list">
-                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
-                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                                    <li><a href="#"><i class="fab fa-google"></i></a></li>
                                 </ul>
                             </div>
                             <!-- end social -->
                         </div>
 
+                    </div>
+                </div>
+                <div class="mb-module">
+                    <div class="mb-module__menu">
+                        <ul class="mb-module__list">
+                            <li class="mb-module__item mb-module__item-parent current-item">
+                                <a href="#">Home</a>
+                                <ul class="mb-module__list mb-module__menu-child">
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                    <li><a href="#">Home 2</a></li>
+                                </ul>
+                            </li>
+                            <li class="mb-module__item mb-module__item-parent">
+                                <a href="#">Pages</a>
+                            </li>
+                            <li class="mb-module__item">
+                                <a href="#">Features</a>
+                            </li>
+                            <li class="mb-module__item">
+                                <a href="#">Blog</a>
+                            </li>
+                            <li class="mb-module__item">
+                                <a href="#">Shop</a>
+                            </li>
+                            <li class="mb-module__item">
+                                <a href="#">Contact</a>
+                            </li>
+                            <li class="mb-module__item">
+                                <a href="#">Request a Quote</a>
+                            </li>
+                            <li class="mb-module__item">
+                                <a href="#">800 123 4567</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </div>

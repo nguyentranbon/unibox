@@ -181,6 +181,7 @@
         right: 0;
         overflow: inherit;
         transition: all .6s;
+        right: -400px;
     }
     &-close{
         position: absolute;
@@ -269,8 +270,10 @@
 // Social
 .social__list{
     display: flex;
+    margin-top: 55px;
     li{
         a{
+           margin-right: 10px;
            background: #30373d;
            width: 2.6em;
            height: 2.6em;
@@ -278,6 +281,11 @@
            line-height: 2.6em;
            display: inline-block;
            color: $main-color;
+           text-align: center;
+           &:hover{
+               background: #fff;
+               color: $headline-color;
+           }
         }
     }
 }
@@ -297,4 +305,44 @@
             height: 100%;
         }
     }
+    .offcanvas-menu{
+        background: #fff;
+        width: 300px;
+    }
+    .mb-module{
+        &__list{
+            display: flex;
+            flex-direction: column;
+            > li{
+                position: relative;
+                overflow: hidden;
+                display: block;
+                a{
+                    display: block;
+                    font-size: 1rem;
+                    padding: 0.125rem 0;
+                    position: relative;
+                    color: $headline-color;
+                }
+            }
+        }
+        &__menu{
+            padding: 45px 30px;
+            &-child{
+                margin-left: 10px;
+                display: none;
+                > li{
+                    a{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        &__icon-toggle{
+            right: 0;
+            position: absolute;
+            cursor: pointer;
+        }
+    }
+    
 }
