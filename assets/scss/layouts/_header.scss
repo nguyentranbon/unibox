@@ -2,6 +2,7 @@
     padding: 0px 3% 0px 3%;
     position: relative;
 }
+//nav
 .uni-header{
     background: $headline-color;
     &__menu{
@@ -166,6 +167,128 @@
     }
 }
 
+
+.offcanvas{
+    &-menu{
+        background: #262c31;
+        width: 400px;
+        color: #fff;
+        position: fixed;
+        z-index: 1000;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        overflow: inherit;
+        transition: all .6s;
+    }
+    &-close{
+        position: absolute;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+        background: $main-color;
+        color: #fff;
+        border-radius: 50%;
+        right: 15px;
+        text-align: center;
+        &:hover{
+            background: #fff;
+            color: $main-color;
+        }
+    }
+}
+
+/* Menu PC */
+.pc-module{
+    &__content{
+        padding: 0;
+    }
+    &__logo{
+        margin-bottom: 30px;
+    }
+    &__post{
+        &-item{
+            font-size: 14px;
+            color: #bebfc4;
+            text-transform: uppercase;
+        }
+    }
+    &__latest-new{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+    &__item{
+        &-title > a{
+            font-size: 20px;
+            color: #fff;
+            font-size: 20px;
+            margin-bottom: 5px;
+            text-transform: initial;
+            font-weight: normal;
+        }
+    }
+    &__about-content p{
+        color: #bebfc4;
+    }
+    &__form-group > input{
+        border: 1px solid #e1e1e1;
+        border-radius: 5px;
+        font-style: normal;
+        height: 60px;
+        padding-right: 55px;
+        padding-left: 22px;
+        width: 100%;
+        background-color: #fff;
+        border-color: rgba(34, 42, 53, 0.3);
+        color: $headline-color;
+    }
+    &__form-content{
+        position: relative;
+    }
+}
+
+.button-wrap{
+    position: absolute;
+    top: 0;
+    right: 0;
+    > button{
+        width: 45px;
+        line-height: 60px;
+        color: $main-color;
+        font-size: 14px;
+        background: transparent;
+        min-width: auto;
+        padding: 0 !important;
+        border: none;
+    }
+
+}
+// Social
+.social__list{
+    display: flex;
+    li{
+        a{
+           background: #30373d;
+           width: 2.6em;
+           height: 2.6em;
+           border-radius: 50%;
+           line-height: 2.6em;
+           display: inline-block;
+           color: $main-color;
+        }
+    }
+}
+//MEDIA queries breakpoint MIN
+@media (min-width: $sm-min){
+    .offcanvas-inner{
+        padding: 41px 58px 60px;
+    }
+}
+
+// MEDIA queries breakpoint  MAX
 @media (max-width: $sm-max){
     .uni-header{
         height: 60px;

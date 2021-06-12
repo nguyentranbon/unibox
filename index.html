@@ -25,6 +25,7 @@
                     </div>
                 </div>
                 <div class="col-6 col-xl-10 col-lg-8">
+                    <!-- nav -->
                     <nav class="uni-header__menu">
                         <a class="uni-header__toggle" href="#">
                             <i class="fa fa-bars" aria-hidden="true"></i>
@@ -52,7 +53,7 @@
                                         </ul>
                                     </li>
                                     <li class="uni-header__item"><a href="#">Pages 2</a></li>
-                                    <li class="uni-header__item uni-header__item__has-child " >
+                                    <li class="uni-header__item uni-header__item__has-child ">
                                         <a href="#">Pages 2</a>
                                         <ul class="uni-header__dropdown uni-header__sub-dropdown">
                                             <li class="uni-header__item "><a href="#">Pages 3</a></li>
@@ -110,7 +111,7 @@
                                                 </li>
                                             </ul>
                                         </div>
-                                        
+
                                     </div>
                                 </ul>
                             </li>
@@ -128,30 +129,114 @@
                             </li>
                         </ul>
                     </nav>
+                    <!-- end-nav -->
                 </div>
             </div>
         </header>
         <!-- end-header -->
+        <!-- Main content -->
+        <main>
+            <div id="ramdom-number"></div>
+            <script>
+               const random =  document.getElementById("ramdom-number");
+               var headIndex = 2; // Khới tạo giá trị bắt đầu
+                function change() {
+                    random.innerHTML = "Head " + headIndex;
+                    headIndex = Math.floor(Math.random() * 100); // *100 là giới hạn random
+                }
 
+                setInterval(change, 3000); // 3000 là thời gian tương đương 3s
+       
+            </script>
+        </main>
+        <!-- End main content -->
+        <!--Off canvas overlay-->
+        <div class="offcanvas-overlay"></div>
+        <div class="offcanvas-menu">
+            <a href="#" class="offcanvas-close"><i class="fas fa-times"></i></a>
+            <div class="offcanvas-inner">
+                <div class="pc-module">
+                    <div class="pc-module__content">
+                        <div class="pc-module__logo">
+                            <a href="" class="pc-module__link">
+                                <img src="assets/images/logo-dark.png" alt="logo-dark">
+                            </a>
+                        </div>
+                        <div class="pc-module__post-recent">
+                            <!-- Post  Recent -->
+                            <div class="pc-module__post-content">
+                                <h5 class="pc-module__post-title pc-section__title">Recent post</h5>
+                                <ul class="pc-module__latest-new">
+                                    <li class="pc-module__post-item">
+                                        <div class="pc-module__post-image"></div>
+                                        <div class="pc-module__post-body">
+                                            <h4 class="pc-module__item-title">
+                                                <a href="#" title="name"> Sapien Lorem Libero Augue Tincidunt Ipsum </a>
+                                            </h4>
+                                            <p class="pc-module__post-meta">
+                                                <i class="far fa-clock"></i> 2020-05-11
+                                            </p>
+                                        </div>
+                                    </li>
+                                    <li class="pc-module__post-item">
+                                        <div class="pc-module__post-image"></div>
+                                        <div class="pc-module__post-body">
+                                            <h4 class="pc-module__item-title">
+                                                <a href="#" title="name"> Sapien Lorem Libero Augue Tincidunt Ipsum </a>
+                                            </h4>
+                                            <p class="pc-module__post-meta">
+                                                <i class="far fa-clock"></i> 2020-05-11
+                                            </p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- End Post Recent -->
+                            <div class="pc-module__about-content">
+                                <h5 class="pc-section__title">About</h5>
+                                <p>World's leading management consulting firms, where bold thinking, inspired people and
+                                    a passion for results come together for extraordinary impact.</p>
+                            </div>
+                            <!-- Nav-content -->
+                            <div class="pc-module__subscribe-content">
+                                <h5 class="pc-section__title">Subscribe</h5>
+                                <div class="pc-module__form-content">
+                                    <form action="#">
+                                        <div class="pc-module__form-group email-swrap">
+                                            <input type="email" name="email" class="sppb-form-control"
+                                                placeholder="Email" required="required" aria-label="email">
+                                        </div>
+                                        <div class="oc-module__button button-wrap">
+                                            <button><i class="fas fa-pencil-alt" aria-hidden="true"></i></button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                           <!--  End Nav- content -->
 
-    </div>
+                            <!-- social -->
+                            <div class="pc-module__social">
+                                <ul class="social__list">
+                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
+                                    <li><a href="#"><i class="fas fa-times"></i></a></li>
+                                </ul>
+                            </div>
+                            <!-- end social -->
+                        </div>
 
-
-
-    <!--Off canvas overlay-->
-    <div class="offcanvas-overlay"></div>
-    <div class="offcanvas-menu">
-        <a href="#" class="offcanvas-close"><span class="fa fa-remove"></span></a>
-        <div class="offcanvas-inner">
-            <div class="pc-module">
-                <div class="pc-module__content">
-                    
+                    </div>
                 </div>
             </div>
         </div>
+
+        <!-- End canvas overlay -->
     </div>
 
-    <!-- End canvas overlay -->
+ 
+
 
 
     <!-- Link script jquery -->
