@@ -175,7 +175,7 @@
         color: #fff;
         position: fixed;
         z-index: 1000;
-        height: 100vh;
+        height: 100%;
         position: fixed;
         top: 0;
         right: 0;
@@ -271,6 +271,9 @@
 .social__list{
     display: flex;
     margin-top: 55px;
+    &-footer{
+        margin-top: 45px;
+    }
     li{
         a{
            margin-right: 10px;
@@ -345,4 +348,7 @@
         }
     }
     
+}
+.menu-parent-open > a .mb-module__icon-toggle  i.fas.fa-plus-circle::before{
+    content:" \f056";
 }

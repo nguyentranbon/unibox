@@ -231,6 +231,36 @@ p {
   overflow-x: hidden;
 }
 
+.footer-content {
+  background-color: #262c31;
+  padding: 110px 0;
+}
+
+.footer-list > li {
+  margin-bottom: 12px;
+}
+
+.footer-list > li > a {
+  color: #bebfc4;
+  text-transform: uppercase;
+}
+
+.footer-list > li > i {
+  font-size: 14px;
+  color: #a9c200;
+  font-weight: 900;
+  padding-right: 9px;
+}
+
+.footer-copy {
+  height: 84px;
+  background-color: #22272b;
+  -webkit-box-shadow: 0 0 0 0 #ffffff;
+          box-shadow: 0 0 0 0 #ffffff;
+  text-align: center;
+  line-height: 84px;
+}
+
 #uni-header {
   padding: 0px 3% 0px 3%;
   position: relative;
@@ -404,7 +434,7 @@ p {
   color: #fff;
   position: fixed;
   z-index: 1000;
-  height: 100vh;
+  height: 100%;
   position: fixed;
   top: 0;
   right: 0;
@@ -512,6 +542,10 @@ p {
   margin-top: 55px;
 }
 
+.social__list-footer {
+  margin-top: 45px;
+}
+
 .social__list li a {
   margin-right: 10px;
   background: #30373d;
@@ -583,4 +617,8 @@ p {
     position: absolute;
     cursor: pointer;
   }
+}
+
+.menu-parent-open > a .mb-module__icon-toggle i.fas.fa-plus-circle::before {
+  content: " \f056";
 }

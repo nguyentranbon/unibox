@@ -19,6 +19,5 @@ jQuery(function ($) {
      $(document).on('click', '.offcanvas-inner .mb-module__icon-toggle', function(event){
         event.preventDefault();
         $(this).closest('.mb-module__item-parent').toggleClass('menu-parent-open').find('>.mb-module__menu-child').slideToggle(400);
-
     })
 });

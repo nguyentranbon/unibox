@@ -1,0 +1,31 @@
+.footer{
+
+    &-content{
+        background-color: #262c31;
+        padding: 110px 0;
+    }
+    &-list{
+        > li{
+            margin-bottom: 12px;
+            > a{
+                color: #bebfc4;
+                text-transform: uppercase;
+                
+            }
+            > i{
+                font-size: 14px;
+                color: $main-color;
+                font-weight: 900;
+                padding-right: 9px;
+            }
+        }   
+    }
+    &-copy{
+        height: 84px;
+        background-color: #22272b;
+        box-shadow: 0 0 0 0 #ffffff;
+        text-align: center;
+        line-height: 84px;
+    }
+}
+
