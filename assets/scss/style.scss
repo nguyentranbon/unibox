@@ -8,10 +8,11 @@
 @import 'base/form';
 @import 'base/reset';
 @import 'base/section';
-
+@import 'base/gird';
 
 //components
-
+@import 'components/contact';
+@import 'components/office-location';
 
 //layout
 @import 'layouts/footer';

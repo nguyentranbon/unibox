@@ -14,6 +14,20 @@
     border-color: $main-color;
     color: #fff !important;
 }
+.uni-btn{
+    &__primary{
+        background: #7bb560;
+        background-image: linear-gradient(135deg, #7bb560 0%, $main-color 100%);
+        border: none;
+        padding: 20px 30px;
+        color: #fff;
+        &:hover{
+            background: $main-color;
+            color: #fff;
+            opacity: .8;
+        }
+    }
+}
 @media (max-width: $md-max){
     .menu-btn > a{
         display: none !important;

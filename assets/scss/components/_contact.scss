@@ -1,0 +1,39 @@
+.contact{
+    &-container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat( 2, minmax( 50% , 1fr) );
+    }
+    &-content{
+        padding: 150px 150px;
+    }
+    &-img{
+        box-shadow: 0 0 0 0 #fff;
+        background-image: url(/assets/images/form-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: scroll;
+        background-position: 50% 50%;
+    }
+}
+
+@media (max-width: $md-max){
+    .contact{
+        &-content{
+            padding: 100px 50px;
+        }
+    }
+}
+@media (max-width: $xs-max){
+    .contact{
+        &-container{
+            grid-template-columns: repeat( 1, 1fr) ;
+        }
+        &-img{
+            width: 100%;
+        }
+        &-content{
+            padding: 50px 20px;
+        }
+    }
+}
